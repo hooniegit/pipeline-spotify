@@ -1,0 +1,361 @@
+{
+    "artists": {
+        "href": "https://api.spotify.com/v1/search?query=IU&type=artist&offset=0&limit=10",
+        "items": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3HqSLMAZ3g3d5poNaI7GOU"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 8026316
+                },
+                "genres": [
+                    "k-pop",
+                    "pop"
+                ],
+                "href": "https://api.spotify.com/v1/artists/3HqSLMAZ3g3d5poNaI7GOU",
+                "id": "3HqSLMAZ3g3d5poNaI7GOU",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb006ff3c0136a71bfb9928d34",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab67616100005174006ff3c0136a71bfb9928d34",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f178006ff3c0136a71bfb9928d34",
+                        "width": 160
+                    }
+                ],
+                "name": "IU",
+                "popularity": 72,
+                "type": "artist",
+                "uri": "spotify:artist:3HqSLMAZ3g3d5poNaI7GOU"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/0Es7WaKFRyUvBXiq5PyQBX"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 1659
+                },
+                "genres": [
+                    "russian ccm"
+                ],
+                "href": "https://api.spotify.com/v1/artists/0Es7WaKFRyUvBXiq5PyQBX",
+                "id": "0Es7WaKFRyUvBXiq5PyQBX",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2730293d044b5bc54a36fe0e777",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e020293d044b5bc54a36fe0e777",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048510293d044b5bc54a36fe0e777",
+                        "width": 64
+                    }
+                ],
+                "name": "Iulia Fridrik",
+                "popularity": 26,
+                "type": "artist",
+                "uri": "spotify:artist:0Es7WaKFRyUvBXiq5PyQBX"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3qNVuliS40BLgXGxhdBdqu"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 2753934
+                },
+                "genres": [
+                    "k-pop"
+                ],
+                "href": "https://api.spotify.com/v1/artists/3qNVuliS40BLgXGxhdBdqu",
+                "id": "3qNVuliS40BLgXGxhdBdqu",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5ebb29975f8b42bcba1eae62577",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab67616100005174b29975f8b42bcba1eae62577",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f178b29975f8b42bcba1eae62577",
+                        "width": 160
+                    }
+                ],
+                "name": "TAEYEON",
+                "popularity": 67,
+                "type": "artist",
+                "uri": "spotify:artist:3qNVuliS40BLgXGxhdBdqu"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5d3bc9MSib3NPeIDxYIIWD"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 160486
+                },
+                "genres": [
+                    "manele"
+                ],
+                "href": "https://api.spotify.com/v1/artists/5d3bc9MSib3NPeIDxYIIWD",
+                "id": "5d3bc9MSib3NPeIDxYIIWD",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5ebbd1a65499f50ba5fd8b7aa24",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab67616100005174bd1a65499f50ba5fd8b7aa24",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f178bd1a65499f50ba5fd8b7aa24",
+                        "width": 160
+                    }
+                ],
+                "name": "Iuly Neamtu",
+                "popularity": 56,
+                "type": "artist",
+                "uri": "spotify:artist:5d3bc9MSib3NPeIDxYIIWD"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 2340148
+                },
+                "genres": [
+                    "k-pop girl group"
+                ],
+                "href": "https://api.spotify.com/v1/artists/6RHTUrRF63xao58xh9FXYJ",
+                "id": "6RHTUrRF63xao58xh9FXYJ",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5ebf44daaf3a37f5be9a0721be7",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab67616100005174f44daaf3a37f5be9a0721be7",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f178f44daaf3a37f5be9a0721be7",
+                        "width": 160
+                    }
+                ],
+                "name": "IVE",
+                "popularity": 77,
+                "type": "artist",
+                "uri": "spotify:artist:6RHTUrRF63xao58xh9FXYJ"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6yuiopcFM536zeuIYo6EB1"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 64
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/6yuiopcFM536zeuIYo6EB1",
+                "id": "6yuiopcFM536zeuIYo6EB1",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5ebf97eec6013079f6cb5c274c0",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab67616100005174f97eec6013079f6cb5c274c0",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f178f97eec6013079f6cb5c274c0",
+                        "width": 160
+                    }
+                ],
+                "name": "#IULIA",
+                "popularity": 21,
+                "type": "artist",
+                "uri": "spotify:artist:6yuiopcFM536zeuIYo6EB1"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 17968538
+                },
+                "genres": [
+                    "k-pop",
+                    "k-pop girl group",
+                    "pop"
+                ],
+                "href": "https://api.spotify.com/v1/artists/7n2Ycct7Beij7Dj7meI4X0",
+                "id": "7n2Ycct7Beij7Dj7meI4X0",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb8944c8aec8db82f35980b191",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab676161000051748944c8aec8db82f35980b191",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f1788944c8aec8db82f35980b191",
+                        "width": 160
+                    }
+                ],
+                "name": "TWICE",
+                "popularity": 81,
+                "type": "artist",
+                "uri": "spotify:artist:7n2Ycct7Beij7Dj7meI4X0"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6TcP3000og43MzgtTbIkvv"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 1066
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/6TcP3000og43MzgtTbIkvv",
+                "id": "6TcP3000og43MzgtTbIkvv",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb81e43dac8fb64d5e4d71c40e",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab6761610000517481e43dac8fb64d5e4d71c40e",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f17881e43dac8fb64d5e4d71c40e",
+                        "width": 160
+                    }
+                ],
+                "name": "iugou",
+                "popularity": 25,
+                "type": "artist",
+                "uri": "spotify:artist:6TcP3000og43MzgtTbIkvv"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5RmQ8k4l3HZ8JoPb4mNsML"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 12017719
+                },
+                "genres": [
+                    "k-rap"
+                ],
+                "href": "https://api.spotify.com/v1/artists/5RmQ8k4l3HZ8JoPb4mNsML",
+                "id": "5RmQ8k4l3HZ8JoPb4mNsML",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb191d43dca6f2f5a126e43e4b",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab67616100005174191d43dca6f2f5a126e43e4b",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f178191d43dca6f2f5a126e43e4b",
+                        "width": 160
+                    }
+                ],
+                "name": "Agust D",
+                "popularity": 78,
+                "type": "artist",
+                "uri": "spotify:artist:5RmQ8k4l3HZ8JoPb4mNsML"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/0xli3BEXUnYn1AclkDVajx"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 11201
+                },
+                "genres": [
+                    "aesthetic rap"
+                ],
+                "href": "https://api.spotify.com/v1/artists/0xli3BEXUnYn1AclkDVajx",
+                "id": "0xli3BEXUnYn1AclkDVajx",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb88b5d928606234cdffe43da3",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab6761610000517488b5d928606234cdffe43da3",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f17888b5d928606234cdffe43da3",
+                        "width": 160
+                    }
+                ],
+                "name": "KA$$IU$",
+                "popularity": 44,
+                "type": "artist",
+                "uri": "spotify:artist:0xli3BEXUnYn1AclkDVajx"
+            }
+        ],
+        "limit": 10,
+        "next": "https://api.spotify.com/v1/search?query=IU&type=artist&offset=10&limit=10",
+        "offset": 0,
+        "previous": null,
+        "total": 19
+    }
+}
