@@ -1,5 +1,9 @@
 # spotify-data-pipeline
 
+# now status
+<img width="1190" alt="스크린샷 2023-06-26 오후 2 31 50" src="https://github.com/hooniegit/spotify-data-pipeline/assets/130134750/49609609-a962-4b73-805c-2e1000da85c8">
+
+
 # Tree Structure
 ```bash
 .
