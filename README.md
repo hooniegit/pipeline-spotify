@@ -1,4 +1,10 @@
 # spotify-data-pipeline
+<img width="946" alt="스크린샷 2023-06-26 오후 4 54 42" src="https://github.com/hooniegit/spotify-data-pipeline/assets/130134750/4601e8cd-d880-46a0-9eae-bbd7b642d218">
+
+### Goal
+1. use spotify API(using spotipy) to create simple dataframe
+2. practice query
+3. change repeatable scripts into modules
 
 # now status
 <img width="1190" alt="스크린샷 2023-06-26 오후 2 31 50" src="https://github.com/hooniegit/spotify-data-pipeline/assets/130134750/49609609-a962-4b73-805c-2e1000da85c8">
