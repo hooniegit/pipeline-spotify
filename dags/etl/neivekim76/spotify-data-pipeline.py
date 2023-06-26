@@ -137,9 +137,9 @@ run_spark = BashOperator(
     dag=dag
 )
 
-# spark.task
-spark_task = BashOperator(
-    task_id='spark.task',
+# spark.task.1
+spark_task_1 = BashOperator(
+    task_id='spark.task.1',
     bash_command=f'''
     sh /Users/kimdohoon/git/spotify-data-pipeline/sh/pyspark-submit.sh \
     /Users/kimdohoon/git/spotify-data-pipeline/src/spark/neivekim76/spark_task_1.py
@@ -147,6 +147,16 @@ spark_task = BashOperator(
     dag=dag
 )
 
+# spark.task.2
+spark_task_2 = BashOperator(
+    task_id='spark.task.2',
+    bash_command=f'''
+    sh /Users/kimdohoon/git/spotify-data-pipeline/sh/pyspark-submit.sh \
+    /Users/kimdohoon/git/spotify-data-pipeline/src/spark/neivekim76/spark_task_2.py
+    ''',
+    dag=dag
+)
+
 # OPERATOR PROCEDURE
 start >> check_execute >> check_wishlist >> make_JSON_playlist >> make_DONE
-make_DONE >> run_spark >> spark_task
+make_DONE >> run_spark >> spark_task_1 >> spark_task_2

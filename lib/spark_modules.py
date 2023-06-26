@@ -29,24 +29,16 @@ def explode_dict(dataframe, column_name):
     for i in columns:
         expressions.append(f"{column_name}."+i)
     df_parsed = dataframe
+    print(expressions)
     for column, expression in zip(columns, expressions):
         df_parsed = df_parsed.withColumn(column, expr(expression))
     df_parsed = df_parsed.select([column for column in columns])
     return df_parsed
 
-def explode_test(dataframe, column_name):
-    columns = [field.name for field in dataframe.select(col(f"{column_name}.*")).schema.fields]
-    expressions = []
-    for i in columns:
-        expressions.append(f"{column_name}."+i)
-    df_parsed = dataframe
-    for column, expression in zip(columns, expressions):
-        if column == 'track' and df_parsed.schema[column].dataType == BooleanType():
-            continue
-        else:
-            df_parsed = df_parsed.withColumn(column, expr(expression))
-    df_parsed = df_parsed.select([column for column in columns])
-    return df_parsed
+# def test(dataframe, column_name):
+#     df_parsed = dataframe.withColumn(column_name, explode(col(column_name)))
+#     return df_parsed
+
 
 # MODULE : filter boolean
 def filter_boolean(dataframe):
