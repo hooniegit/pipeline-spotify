@@ -9,6 +9,16 @@
 # now status
 <img width="1190" alt="스크린샷 2023-06-26 오후 2 31 50" src="https://github.com/hooniegit/spotify-data-pipeline/assets/130134750/49609609-a962-4b73-805c-2e1000da85c8">
 
+### Process
+1. start - basic
+2. check.execute - basic
+3. check.wishlist - extract list of playlists as a parameter
+4. make.JSON.playlist - create temp JSON files by sending API requests
+5. make.DONE - create DONE FLAG if the task is finished
+6. run.spark - run local spark
+7. spark.task.1 - simple parse job using modules & save as parquet
+8. spark.task.2 - complex parse job & save as cashed parquet
+
 
 # Tree Structure
 ```bash
