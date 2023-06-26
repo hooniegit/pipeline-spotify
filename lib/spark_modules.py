@@ -39,7 +39,6 @@ def explode_dict(dataframe, column_name):
 #     df_parsed = dataframe.withColumn(column_name, explode(col(column_name)))
 #     return df_parsed
 
-
 # MODULE : filter boolean
 def filter_boolean(dataframe):
     filtered_columns = [column.name for column in dataframe.schema if not isinstance(column.dataType, BooleanType)]
@@ -50,9 +49,9 @@ def filter_boolean(dataframe):
 def store_as_parquet(dataframe, PATH, cache=False):
     if cache == True:
         dataframe.cache()
-        dataframe.coalesce(1).write.parquet(PATH)
+        dataframe.coalesce(1).write.mode("overwrite").parquet(PATH)
     else:
-        dataframe.write.parquet(PATH)
+        dataframe.write.mode("overwrite").parquet(PATH)
     print("dataframe stored")
 
 # TEST

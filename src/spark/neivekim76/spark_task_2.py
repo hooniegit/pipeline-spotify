@@ -2,7 +2,7 @@
 import sys
 sys.path.append('/Users/kimdohoon/git/spotify-data-pipeline/lib')
 import spark_modules as lib_spark
-from pyspark.sql.functions import explode, col, expr
+from pyspark.sql.functions import explode, col, expr, first
 
 # VARIABLES
 PATH = "file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/Hot Hits Korea.json"
@@ -93,10 +93,11 @@ root
 dataframe.printSchema()
 print("---------------schema is printed----------------------")
 
-df_specification = dataframe.select(
+df_specification = dataframe.withColumn("track_name", expr("track.name"))
+df_specification = df_specification.select(
     "track.album",
     "track.artists",
-    "track.name",
+    "track_name",
     "track.popularity"
 )
 print("---------------dataframe is made----------------------")
@@ -104,7 +105,25 @@ print("---------------dataframe is made----------------------")
 df_specification = df_specification.withColumn("album_type", expr("album.album_type"))
 df_specification = df_specification.withColumn("album_images", expr("album.images"))
 df_specification = df_specification.withColumn("album_name", expr("album.name"))
+df_specification = df_specification.withColumn("album_artists", expr("album.artists"))
+df_specification = df_specification.withColumn("album_artists", expr("album_artists.name"))
+df_specification = df_specification.withColumn("artists_name", expr("artists.name"))
+
+# df_specification = df_specification.withColumn("artists", explode("artists"))
+# df_specification = df_specification.selectExpr("*", "explode(artists) as exploded_col")
+df_arranged = df_specification.select(
+    "album_name",
+    "album_artists",
+    "album_type",
+    "album_images",
+    "track_name",
+    "popularity",
+    "artists_name"
+)
+df_arranged.show()
+print("---------------arange is done----------------------")
+
 
 PATH = "file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/parquets/table"
-lib_spark.store_as_parquet(df_specification, PATH, True)
+lib_spark.store_as_parquet(df_arranged, PATH, True)
 print("---------------load is done----------------------")
