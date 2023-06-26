@@ -1,6 +1,7 @@
 # spotify-data-pipeline
 
 # Tree Structure
+```bash
 .
 ├── README.md
 ├── dags
@@ -44,3 +45,4 @@
             ├── spark_parse_playlist.ipynb
             ├── spark_task_1.py
             └── spark_task_2.py
+```
