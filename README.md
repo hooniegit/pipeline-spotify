@@ -21,7 +21,7 @@
 
 
 # Tree Structure
-```bash
+```
 .
 ├── README.md
 ├── dags
