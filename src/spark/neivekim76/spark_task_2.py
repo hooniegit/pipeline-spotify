@@ -9,14 +9,49 @@ PATH = "file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/Hot
 
 # BUILD SPARK SESSION
 spark = lib_spark.build_spark_session()
-print("---------------sesion build is done----------------------")
 
 # READ PARQUET
 PARQUET_PATH = 'file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/parquets/items/*'
 dataframe = spark.read.parquet(PARQUET_PATH)
+
+df_specification = dataframe.withColumn("track_name", expr("track.name"))
+df_specification = df_specification.select(
+    "track.album",
+    "track.artists",
+    "track_name",
+    "track.popularity"
+)
 print("---------------dataframe is made----------------------")
 
+df_specification = df_specification.withColumn("album_type", expr("album.album_type"))
+df_specification = df_specification.withColumn("album_images", expr("album.images"))
+df_specification = df_specification.withColumn("album_name", expr("album.name"))
+df_specification = df_specification.withColumn("album_artists", expr("album.artists"))
+df_specification = df_specification.withColumn("album_artists", expr("album_artists.name"))
+df_specification = df_specification.withColumn("artists_name", expr("artists.name"))
+
+# df_specification = df_specification.withColumn("artists", explode("artists"))
+# df_specification = df_specification.selectExpr("*", "explode(artists) as exploded_col")
+df_arranged = df_specification.select(
+    "album_name",
+    "album_artists",
+    "album_type",
+    "album_images",
+    "track_name",
+    "popularity",
+    "artists_name"
+)
+df_arranged.show()
+print("---------------arange is done----------------------")
+
+
+PATH = "file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/parquets/table"
+lib_spark.store_as_parquet(df_arranged, PATH, True)
+print("---------------load is done----------------------")
+
+
 '''
+dataframe.printSchema()
 root
  |-- added_at: string (nullable = true)
  |-- added_by: struct (nullable = true)
@@ -89,41 +124,3 @@ root
  |-- video_thumbnail: struct (nullable = true)
  |    |-- url: string (nullable = true)
 '''
-
-dataframe.printSchema()
-print("---------------schema is printed----------------------")
-
-df_specification = dataframe.withColumn("track_name", expr("track.name"))
-df_specification = df_specification.select(
-    "track.album",
-    "track.artists",
-    "track_name",
-    "track.popularity"
-)
-print("---------------dataframe is made----------------------")
-
-df_specification = df_specification.withColumn("album_type", expr("album.album_type"))
-df_specification = df_specification.withColumn("album_images", expr("album.images"))
-df_specification = df_specification.withColumn("album_name", expr("album.name"))
-df_specification = df_specification.withColumn("album_artists", expr("album.artists"))
-df_specification = df_specification.withColumn("album_artists", expr("album_artists.name"))
-df_specification = df_specification.withColumn("artists_name", expr("artists.name"))
-
-# df_specification = df_specification.withColumn("artists", explode("artists"))
-# df_specification = df_specification.selectExpr("*", "explode(artists) as exploded_col")
-df_arranged = df_specification.select(
-    "album_name",
-    "album_artists",
-    "album_type",
-    "album_images",
-    "track_name",
-    "popularity",
-    "artists_name"
-)
-df_arranged.show()
-print("---------------arange is done----------------------")
-
-
-PATH = "file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/parquets/table"
-lib_spark.store_as_parquet(df_arranged, PATH, True)
-print("---------------load is done----------------------")

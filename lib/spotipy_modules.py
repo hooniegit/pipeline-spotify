@@ -1,5 +1,5 @@
 # IMPORT MODULES
-import spotipy, sys, json
+import spotipy, json
 from spotipy.oauth2 import SpotifyClientCredentials
 
 # MODULE : connect spotify
