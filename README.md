@@ -23,7 +23,6 @@
 # Tree Structure
 ```bash
 .
-.
 ├── README.md
 ├── dags
 │   └── etl
@@ -38,8 +37,11 @@
 │   │   ├── artists
 │   │   │   └── IU.json
 │   │   └── playlists
+│   │       ├── All Out 2010s.json
 │   │       ├── DONE
 │   │       ├── Hot Hits Korea.json
+│   │       ├── Mega Hit Mix.json
+│   │       ├── Today's Top Hits .json
 │   │       ├── TrenChill K-R&B.json
 │   │       ├── parquets
 │   │       │   ├── items
