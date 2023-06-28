@@ -34,10 +34,7 @@
 ├── README.md
 ├── dags
 │   └── etl
-│       └── neivekim76
-│           ├── __pycache__
-│           │   └── spotify-data-pipeline.cpython-37.pyc
-│           └── spotify-data-pipeline.py
+│       └── spotify-data-pipeline.py
 ├── datas
 │   ├── JSON
 │   │   ├── artist_albums
@@ -72,11 +69,9 @@
 │   └── run-spark.sh
 └── src
     ├── API_requests
-    │   └── neivekim76
-    │       └── make_JSON_playlists.py
+    │   └── make_JSON_playlists.py
     └── spark
-        └── neivekim76
-            ├── TEST.py
-            ├── spark_task_1.py
-            └── spark_task_2.py
+        ├── TEST.py
+        ├── spark_task_1.py
+        └── spark_task_2.py
 ```
