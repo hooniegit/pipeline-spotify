@@ -6,6 +6,14 @@
 2. practice query
 3. change repeatable scripts into modules
 
+### Used Tools
+1. Spark - 3.2.4
+2. Zeppelin - 0.10.1
+3. Pycharm for developers
+
+### Used Modules
+1. spotipy
+
 # now status
 <img width="1190" alt="스크린샷 2023-06-26 오후 2 31 50" src="https://github.com/hooniegit/spotify-data-pipeline/assets/130134750/49609609-a962-4b73-805c-2e1000da85c8">
 
@@ -21,8 +29,7 @@
 
 
 # Tree Structure
-```bash
-.
+```
 .
 ├── README.md
 ├── dags
@@ -38,8 +45,11 @@
 │   │   ├── artists
 │   │   │   └── IU.json
 │   │   └── playlists
+│   │       ├── All Out 2010s.json
 │   │       ├── DONE
 │   │       ├── Hot Hits Korea.json
+│   │       ├── Mega Hit Mix.json
+│   │       ├── Today's Top Hits .json
 │   │       ├── TrenChill K-R&B.json
 │   │       ├── parquets
 │   │       │   ├── items
