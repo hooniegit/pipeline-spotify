@@ -1,6 +1,6 @@
 # IMPORT MODULES
 import sys, json
-sys.path.append('/Users/kimdohoon/git/spotify-data-pipeline/lib')
+sys.path.append('/spotify-data-pipeline/lib')
 import spotipy_modules as lib_spotify
 
 # VARIABLES

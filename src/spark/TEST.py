@@ -41,10 +41,20 @@ df_arranged = df_specification.select(
 df_arranged.show()
 
 # album_artists, album_images, artists_name
-df_arranged['album_artist'] = df_arranged.select(explode(df_arranged['album_artists']).alias('album_artist'))
+df_arranged = df_arranged.withColumn('album_artist', explode(df_arranged['album_artists']).alias('album_artist'))
+df_arranged = df_arranged.withColumn('artist_name', explode(df_arranged['artists_name']).alias('artist_name'))
+df_arranged = df_arranged.select(
+    "album_name",
+    "album_artist",
+    "album_type",
+    "album_images",
+    "track_name",
+    "popularity",
+    "artist_name"
+)
 df_arranged.show()
 
 
-PATH = "file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/parquets/table"
-spark_modules.store_as_parquet(df_arranged, PATH, True)
-print("---------------load is done----------------------")
+# PATH = "file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/parquets/table"
+# spark_modules.store_as_parquet(df_arranged, PATH, True)
+# print("---------------load is done----------------------")

@@ -1,6 +1,6 @@
 # IMPORT MODULES
 import sys
-sys.path.append('/Users/kimdohoon/git/spotify-data-pipeline/lib')
+sys.path.append('/spotify-data-pipeline/lib')
 import spark_modules as lib_spark
 from pyspark.sql.functions import explode, col, expr, first
 
