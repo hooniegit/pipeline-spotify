@@ -5,12 +5,14 @@ import spark_modules as lib_spark
 from pyspark.sql.functions import explode, col, expr, first
 
 # VARIABLES
+# DIRECTORY NEEDS TO BE FIXED *********************
 PATH = "file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/Hot Hits Korea.json"
 
 # BUILD SPARK SESSION
 spark = lib_spark.build_spark_session()
 
 # READ PARQUET
+# DIRECTORY NEEDS TO BE FIXED *********************
 PARQUET_PATH = 'file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/parquets/items/*'
 dataframe = spark.read.parquet(PARQUET_PATH)
 
@@ -44,7 +46,7 @@ df_arranged = df_specification.select(
 df_arranged.show()
 print("---------------arange is done----------------------")
 
-
+# DIRECTORY NEEDS TO BE FIXED *********************
 PATH = "file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/parquets/table"
 lib_spark.store_as_parquet(df_arranged, PATH, True)
 print("---------------load is done----------------------")

@@ -21,7 +21,8 @@ df_items = lib_spark.explode_list(df_tracks, "items")
 print("---------------df_items is made----------------------")
 
 # SAVE AS PARQUET
-PARQUET_PATH = 'file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/parquets/items'
+# DIRECTORY NEEDS TO BE FIXED *********************
+PARQUET_PATH = 'file:/Users/kimdohoon/git/spotify-data-pipeline/datas/parquets/items'
 lib_spark.store_as_parquet(df_items, PARQUET_PATH)
 
 # TEST

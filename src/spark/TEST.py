@@ -9,6 +9,7 @@ import spark_modules
 spark = SparkSession.builder.getOrCreate()
 
 # READ PARQUET
+# DIRECTORY NEEDS TO BE FIXED *********************
 PARQUET_PATH = 'file:/Users/kimdohoon/git/spotify-data-pipeline/datas/JSON/playlists/parquets/items/*'
 dataframe = spark.read.parquet(PARQUET_PATH)
 
