@@ -9,7 +9,6 @@
 ### Used Tools
 1. Spark - 3.2.4
 2. Zeppelin - 0.10.1
-3. Pycharm for developers
 
 ### Used Modules
 1. spotipy
